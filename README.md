@@ -127,7 +127,7 @@ mutation {
 }
 Contributing
 
-Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
+Contributers are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
 
 Fork the repository
 Create a feature branch
