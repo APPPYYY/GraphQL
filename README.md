@@ -82,7 +82,7 @@ Clone the repository:
 
 bash
 
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/APPPYYY/GraphQL.git
 cd your-repo
 Build the project:
 
