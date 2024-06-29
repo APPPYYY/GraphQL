@@ -56,11 +56,8 @@ Queries
 type Query {
 
   findAllUsers: [UserEntity]
-  
   findUserByUserId(userId: ID!): UserEntity
-  
   findAllOrders: [OrderEntity]
-  
   findOrderByorderId(orderId: ID!): OrderEntity
   
 }
@@ -69,11 +66,8 @@ Mutations
 type Mutation {
 
   createUser(name: String, phone: String, email: String, password: String): UserEntity
-  
   deleteUserByUserId(userId: ID!): Boolean
-  
   createOrder(orderDetails: String, address: String, price: String, userId: ID!): OrderEntity
-  
   deleteOrderByorderId(orderId: ID!): Boolean
   
 }
