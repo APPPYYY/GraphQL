@@ -50,50 +50,68 @@ type OrderEntity {
   price: String
   user: UserEntity
 }
+
 Queries
 
 type Query {
+
   findAllUsers: [UserEntity]
+  
   findUserByUserId(userId: ID!): UserEntity
+  
   findAllOrders: [OrderEntity]
+  
   findOrderByorderId(orderId: ID!): OrderEntity
+  
 }
 Mutations
 
 type Mutation {
+
   createUser(name: String, phone: String, email: String, password: String): UserEntity
+  
   deleteUserByUserId(userId: ID!): Boolean
+  
   createOrder(orderDetails: String, address: String, price: String, userId: ID!): OrderEntity
+  
   deleteOrderByorderId(orderId: ID!): Boolean
+  
 }
 Setup
+
 Prerequisites
+
 Java 17
 Maven
 Installation
 Clone the repository:
 
 bash
+
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
 Build the project:
 
 bash
+
 mvn clean install
 Run the application:
 
 bash
+
 mvn spring-boot:run
 Usage
 Access GraphQL Playground
 Once the application is running, you can access the GraphQL Playground at:
 
 bash
+
 http://localhost:1122/graphiql OR http://localhost:1122/mypath
 Example Queries
 Find All Users:
 
 graphql
+
 query {
   findAllUsers {
     userId
@@ -105,6 +123,7 @@ query {
 Create a User:
 
 graphql
+
 mutation {
   createUser(name: "John Doe", phone: "1234567890", email: "john.doe@example.com", password: "password") {
     userId
@@ -113,6 +132,7 @@ mutation {
   }
 }
 Contributing
+
 Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
 
 Fork the repository
@@ -124,6 +144,7 @@ License
 This project is open-source.
 
 Contact
+
 For any inquiries or support, please contact comeflywithmes1999@gmail.com.
 
 ---
