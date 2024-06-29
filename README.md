@@ -25,7 +25,7 @@ This project is a Proof of Concept (POC) that demonstrates the integration of Gr
 ## Technologies Used
 
 - **Java 17**
-- **Spring Boot 3.3.1
+- **Spring Boot 3.3.1**
 - **GraphQL Java**
 - **Spring Data JPA**
 - **Postgresql Database** 
